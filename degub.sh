@@ -12,6 +12,7 @@ then
 	sleep 1
 	gsettings get org.gnome.desktop.background picture-uri
 	gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/gnome/adwaita-day.jpg
+	sleep 1
 	echo -e "\033[32m Done!\033[0m"
 elif [ $cmd = "2" ];
 then
