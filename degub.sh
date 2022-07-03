@@ -10,26 +10,25 @@ if [ $cmd = "1" ];
 then
 	echo -e  "\033[31m Starting debuger...\033[0m"
 	sleep 1
-	gsettings get org.gnome.desktop.background picture-uri 
-	sleep 1
+	gsettings get org.gnome.desktop.background picture-uri
 	gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/gnome/adwaita-day.jpg
 	echo -e "\033[32m Done!\033[0m"
 elif [ $cmd = "2" ];
 then
 	echo -e  "\033[31m Starting debuger...\033[0m"
         sleep 1
-        gsettings get org.gnome.desktop.background picture-uri 
-        sleep 1
+        gsettings get org.gnome.desktop.background picture-uri	
         gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/gnome/LightWaves.jpg
-        echo -e "\033[32m Done!\033[0m"
+        sleep 1
+	echo -e "\033[32m Done!\033[0m"
 elif [ $cmd = "3" ];
 then
 	echo -e  "\033[31m Starting debuger...\033[0m"
         sleep 1
-        gsettings get org.gnome.desktop.background picture-uri 
-        sleep 1
+        gsettings get org.gnome.desktop.background picture-uri
         gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/gnome/Road.jpg
-        echo -e "\033[32m Done!\033[0m"
+        sleeṕ 1
+	echo -e "\033[32m Done!\033[0m"
 
 else
 	exit
